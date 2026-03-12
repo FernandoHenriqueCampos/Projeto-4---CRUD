@@ -4,7 +4,7 @@ import { postUser } from './api/post.js';
 import { updateUser } from './api/put.js';
 
 
-const API_URL = 'http://localhost:8000/api';
+const API_URL = 'http://host.docker.internal:8000/api';
 
 let Editmode = false;
 
