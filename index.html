@@ -13,36 +13,36 @@
     <main>
         <section class="usersShow">
             <h1>Users</h1>
-            <span>No user found</span>
-            <div class="card">
-            </div>
+            <div id="cards" class="cards"></div>
         </section>
 
         <section class="postPutUser">
-            <h1>Create User</h1>
+            <h1 id="EditCreate">Create User</h1>
             <form action="">
                 <div class="Input">
                     <label for="name">Name</label>
-                    <input type="text" value="name">
+                    <input type="text" id="name">
                 </div>
 
                 <div class="Input">
                     <label for="age">Age</label>
-                    <input type="number" value="age">
+                    <input type="number" id="age">
                 </div>
 
                 <div class="Input">
                     <label for="email">Email</label>
-                    <input type="email" value="email">
+                    <input type="email" id="email">
                 </div>
 
-                <button type="button" onclick="postDocs()">Create</button>
+                <button id="createButton" type="button" onclick="postButtonUser()">Create</button>
 
-                <button type="button" class="updateButton">Update</button>
-                <button type="button" class="cancelButton">Cancel</button>
+                <button id="updateButton" type="button" class="updateButton edit" onclick="handleUpdateClick()">
+                    Update
+                </button>
+                <button id="cancelButton" type="button" class="cancelButton edit" onclick="cancelDisplayButton()">Cancel</button>
             </form>
         </section>
     </main>
-    <script src="script.js"></script>
+    <script type="module" src="script.js"></script>
 </body>
 </html>
