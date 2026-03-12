@@ -9,7 +9,6 @@ export async function deleteUser(id, API_URL) {
         }
 
         const data = await response.json();
-        console.log("Deletado com sucesso:", data);
     } catch (error) {
         console.error("Erro na função deleteUser:", error);
     }

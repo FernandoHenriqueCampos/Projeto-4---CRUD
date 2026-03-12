@@ -10,14 +10,12 @@ export async function updateUser(id, API_URL, updateData) {
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify(updateData)
             });
-            console.log(`PATCH: Atualizando ${numFields} campo(s)`);
         } else if (numFields === 3) {
             response = await fetch(url, {
                 method: 'PUT',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify(updateData)
             });
-            console.log('PUT: Atualizando todos os campos');
         }
 
         const data = await response.json();

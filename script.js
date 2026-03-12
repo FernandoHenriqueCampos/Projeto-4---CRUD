@@ -42,8 +42,6 @@ let currentEditId = null;
 window.editButtonUser = function(id, name, age, email) {
     if (id === undefined) return;
 
-    console.log("Preenchendo formulário para ID:", id);
-
     userDataOriginal = {
         name: name,
         age: parseInt(age),
